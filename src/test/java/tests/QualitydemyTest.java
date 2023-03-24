@@ -1,9 +1,12 @@
 package tests;
 
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import pages.QualitydemyPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class QualitydemyTest {
 
@@ -21,11 +24,27 @@ public class QualitydemyTest {
 
         quality.emailButonu.sendKeys(ConfigReader.getProperty("GecerliMail"));
 
-        Thread.sleep(500);
+        ReusableMethods.waitForClickablility(quality.loginButton,5);
 
         quality.passwordBox.sendKeys(ConfigReader.getProperty("GecerliPassword"));
-
+        ReusableMethods.bekle(5);
         quality.loginButton.click();
+
+        ReusableMethods.bekle(10);
+
+        Actions actions = new Actions(Driver.getDriver());
+
+        actions.moveToElement(quality.categories).clickAndHold(quality.categories).moveToElement(quality.allcourses).
+                click(quality.allcourses).perform();
+
+
+
+
+
+
+
+
+
 
     }
 }

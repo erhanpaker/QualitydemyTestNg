@@ -26,4 +26,18 @@ public class QualitydemyPage {
     @FindBy(xpath = "(//button[@type='submit'])[2]")
     public WebElement loginButton;
 
+    @FindBy(xpath = "//span[@class='fw-500']")
+    public WebElement categories;
+
+    @FindBy(xpath = "(//*[text()='All courses'])[1]")
+    public WebElement allcourses;
+
+    @FindBy(xpath = "//*[text(='2')")
+    public WebElement seconPage;
+
+    @FindBy(xpath = "(//a[@class='course-title'])[5]")
+    public WebElement english;
+
+
+
 }
