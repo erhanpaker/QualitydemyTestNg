@@ -35,8 +35,12 @@ public class QualitydemyPage {
     @FindBy(xpath = "//*[text(='2')")
     public WebElement seconPage;
 
-    @FindBy(xpath = "(//a[@class='course-title'])[5]")
+    // @FindBy(xpath = "(//a[@class='course-title'])[5]")
+    @FindBy(xpath = "//*[text()='All courses'])[1]")
     public WebElement english;
+
+    @FindBy(xpath = "(//a[@class='course-title'])[2]")
+    public WebElement build;
 
 
 
