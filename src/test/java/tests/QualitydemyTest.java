@@ -36,7 +36,9 @@ public class QualitydemyTest {
 
         actions.moveToElement(quality.categories).moveToElement(quality.allcourses).
                 click(quality.allcourses).perform();
-        ReusableMethods.bekle(10);
+
+        actions.sendKeys(Keys.END).perform();
+
 
 
 

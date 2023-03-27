@@ -41,7 +41,7 @@ public class QualitydemyPage {
     public WebElement english;
 
     @FindBy(xpath = "(//a[@class='course-title'])[2]")
-    public WebElement build;
+    public WebElement second;
 
 
 
