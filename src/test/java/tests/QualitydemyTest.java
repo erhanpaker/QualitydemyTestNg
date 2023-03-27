@@ -34,8 +34,9 @@ public class QualitydemyTest {
 
         Actions actions = new Actions(Driver.getDriver());
 
-        actions.moveToElement(quality.categories).clickAndHold(quality.categories).moveToElement(quality.allcourses).
+        actions.moveToElement(quality.categories).moveToElement(quality.allcourses).
                 click(quality.allcourses).perform();
+        ReusableMethods.bekle(10);
 
 
 
