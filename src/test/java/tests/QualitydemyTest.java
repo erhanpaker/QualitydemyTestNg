@@ -30,14 +30,19 @@ public class QualitydemyTest {
         ReusableMethods.bekle(5);
         quality.loginButton.click();
 
-        ReusableMethods.bekle(10);
+        ReusableMethods.bekle(5);
 
         Actions actions = new Actions(Driver.getDriver());
 
         actions.moveToElement(quality.categories).moveToElement(quality.allcourses).
                 click(quality.allcourses).perform();
+        ReusableMethods.bekle(5);
 
-        actions.sendKeys(Keys.END).perform();
+        // actions.sendKeys(Keys.PAGE_DOWN).perform();
+        actions.scrollToElement(quality.second).perform();
+        Thread.sleep(5000);
+
+        quality.second.click();
 
 
 
