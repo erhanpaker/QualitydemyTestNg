@@ -52,6 +52,10 @@ public class QualitydemyTest {
 
         quality.stripe.click();
 
+        ReusableMethods.bekle(5);
+
+        quality.payWithButon.click();
+
 
 
     }
