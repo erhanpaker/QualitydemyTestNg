@@ -56,6 +56,8 @@ public class QualitydemyTest {
 
         quality.payWithButon.click();
 
+        actions.sendKeys(quality.payButon, "anevzatcelik@gmail.com").perform();
+
 
 
     }

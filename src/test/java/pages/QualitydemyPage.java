@@ -61,6 +61,14 @@ public class QualitydemyPage {
     @FindBy(xpath = "//*[@id=\"stripePayButton\"]")
     public WebElement payWithButon;
 
+    @FindBy(xpath = "//*[@id=\"email\"]")
+    public WebElement payButon;
+
+    @FindBy(xpath = "//*[@id=\"cardNumber\"]")
+    public WebElement cardNumber;
+
+
+
 
 
 }
