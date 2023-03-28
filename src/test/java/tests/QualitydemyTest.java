@@ -59,7 +59,11 @@ public class QualitydemyTest {
         actions.sendKeys(quality.payButon, "anevzatcelik@gmail.com").perform();
 
         actions.sendKeys(Keys.TAB).sendKeys("4242424242424242").
-                sendKeys(Keys.TAB).sendKeys(" 11 24").perform();
+                sendKeys(Keys.TAB).sendKeys(" 11 24").
+                sendKeys(Keys.TAB).sendKeys("323").
+                sendKeys(Keys.TAB).sendKeys("ahmet bye").
+                sendKeys(Keys.TAB).click(quality.paybuton).
+                sendKeys("05444444444").perform();
 
 
 
