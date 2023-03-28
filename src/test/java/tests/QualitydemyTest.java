@@ -63,7 +63,10 @@ public class QualitydemyTest {
                 sendKeys(Keys.TAB).sendKeys("323").
                 sendKeys(Keys.TAB).sendKeys("ahmet bye").
                 sendKeys(Keys.TAB).click(quality.paybuton).
+
+                // telefon numarasını kutucuğa yazmıyor
                 sendKeys("05444444444").perform();
+        quality.ode.click();
 
 
 

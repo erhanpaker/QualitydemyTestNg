@@ -70,6 +70,9 @@ public class QualitydemyPage {
     @FindBy(xpath = "//*[@id=\"enableStripePass\"]")
     public  WebElement paybuton;
 
+    @FindBy(xpath = "//*[@id=\"root\"]/div/div/div[2]/div/div[2]/form/div[2]/div/div[2]/button/div[3]")
+    public WebElement ode;
+
 
 
 
