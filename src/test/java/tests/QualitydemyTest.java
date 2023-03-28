@@ -40,8 +40,11 @@ public class QualitydemyTest {
 
         actions.sendKeys(Keys.PAGE_DOWN).
                 sendKeys(Keys.PAGE_DOWN).perform();
-        ReusableMethods.bekle(10);
+        ReusableMethods.bekle(5);
         quality.second.click();
+
+        quality.engılsh.click();
+
 
 
 
