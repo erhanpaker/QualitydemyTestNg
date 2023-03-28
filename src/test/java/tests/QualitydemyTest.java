@@ -34,15 +34,15 @@ public class QualitydemyTest {
 
         Actions actions = new Actions(Driver.getDriver());
 
-        actions.moveToElement(quality.categories).moveToElement(quality.allcourses).
-                click(quality.allcourses).perform();
-        ReusableMethods.bekle(5);
+       actions.moveToElement(quality.categories).moveToElement(quality.allcourses).
+               click(quality.allcourses).perform();
+        ReusableMethods.bekle(10);
 
-        // actions.sendKeys(Keys.PAGE_DOWN).perform();
-        actions.scrollToElement(quality.second).perform();
-        Thread.sleep(5000);
-
+        actions.sendKeys(Keys.PAGE_DOWN).
+                sendKeys(Keys.PAGE_DOWN).perform();
+        ReusableMethods.bekle(10);
         quality.second.click();
+
 
 
 
