@@ -24,6 +24,7 @@ public class QualitydemyTest {
 
         quality.emailButonu.sendKeys(ConfigReader.getProperty("GecerliMail"));
 
+
         ReusableMethods.waitForClickablility(quality.loginButton,5);
 
         quality.passwordBox.sendKeys(ConfigReader.getProperty("GecerliPassword"));
@@ -45,19 +46,9 @@ public class QualitydemyTest {
 
         quality.engılsh.click();
 
+        quality.bay.click();
 
-
-
-
-
-
-
-
-
-
-
-
-
+        quality.checkout.click();
 
 
 
