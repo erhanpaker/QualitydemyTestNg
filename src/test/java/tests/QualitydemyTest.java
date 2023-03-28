@@ -50,6 +50,7 @@ public class QualitydemyTest {
 
         quality.checkout.click();
 
+        quality.stripe.click();
 
 
 

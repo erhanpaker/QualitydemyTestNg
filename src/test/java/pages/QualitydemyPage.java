@@ -55,6 +55,9 @@ public class QualitydemyPage {
     @FindBy(xpath = "//*[@id=\"cart_items_details\"]/div[2]/div/button")
     public WebElement checkout;
 
+    @FindBy(xpath = "/html/body/div[1]/div/div[2]/div/div/div[1]/div/div/img[2]")
+    public WebElement stripe;
+
 
 
 }
