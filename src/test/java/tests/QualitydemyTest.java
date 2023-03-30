@@ -9,7 +9,7 @@ import utilities.Driver;
 import utilities.ReusableMethods;
 
 public class QualitydemyTest {
-
+    Actions actions = new Actions(Driver.getDriver());
     QualitydemyPage quality = new QualitydemyPage();
 
     @Test
@@ -33,7 +33,7 @@ public class QualitydemyTest {
 
         ReusableMethods.bekle(5);
 
-        Actions actions = new Actions(Driver.getDriver());
+        // Actions actions = new Actions(Driver.getDriver());
 
        actions.moveToElement(quality.categories).moveToElement(quality.allcourses).
                click(quality.allcourses).perform();
@@ -88,6 +88,17 @@ public class QualitydemyTest {
         quality.passwordBox.sendKeys(ConfigReader.getProperty("GecerliPassword"));
         ReusableMethods.bekle(5);
         quality.loginButton.click();
+
+        actions.sendKeys(Keys.PAGE_DOWN).
+
+                sendKeys(Keys.PAGE_DOWN).perform();
+        ReusableMethods.bekle(5);
+
+        quality.ikincimetod.click();
+
+
+
+
 
 
     }

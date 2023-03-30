@@ -73,6 +73,8 @@ public class QualitydemyPage {
     @FindBy(xpath = "//*[@id=\"root\"]/div/div/div[2]/div/div[2]/form/div[2]/div/div[2]/button/div[3]")
     public WebElement ode;
 
+    @FindBy(xpath = "(//div[@class='course-image'])[1]")
+    public WebElement ikincimetod;
 
 
 
