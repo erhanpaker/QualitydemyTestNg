@@ -68,6 +68,26 @@ public class QualitydemyTest {
                 sendKeys("555 252 22 22").perform();
         quality.ode.click();
 
+    }
+
+    @Test
+
+    public void test2(){
+
+        Driver.getDriver().get(ConfigReader.getProperty("url"));
+
+        quality.cookies.click();
+
+        quality.login.click();
+
+        quality.emailButonu.sendKeys(ConfigReader.getProperty("GecerliMail"));
+
+
+        ReusableMethods.waitForClickablility(quality.loginButton,5);
+
+        quality.passwordBox.sendKeys(ConfigReader.getProperty("GecerliPassword"));
+        ReusableMethods.bekle(5);
+        quality.loginButton.click();
 
 
     }
