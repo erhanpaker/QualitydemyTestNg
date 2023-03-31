@@ -96,6 +96,13 @@ public class QualitydemyTest {
 
         quality.ikincimetod.click();
 
+        quality.wislihst.click();
+
+        ReusableMethods.bekle(6);
+
+        actions.sendKeys(Keys.PAGE_UP).moveToElement(quality.kalp).click(quality.tgoto).perform();
+
+
 
 
 
