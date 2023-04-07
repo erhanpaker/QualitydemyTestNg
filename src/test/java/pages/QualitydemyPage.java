@@ -46,10 +46,10 @@ public class QualitydemyPage {
     @FindBy(xpath = "/html/body/section[3]/div/div/div[2]/nav/ul/li[2]/a")
     public WebElement second;
 
-    @FindBy(xpath = "(//div[@class='course-image'])[1]")
+    @FindBy(xpath = "(//a[@class='course-title'])[6]")
     public WebElement englsh;
 
-    @FindBy(xpath = "//*[@id=\"course_7\"]")
+    @FindBy(xpath = "//*[@id=\"course_12\"]")
     public WebElement bay;
 
     @FindBy(xpath = "//*[@id=\"cart_items_details\"]/div[2]/div/button")

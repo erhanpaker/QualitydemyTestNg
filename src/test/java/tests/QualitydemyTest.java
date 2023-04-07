@@ -43,6 +43,10 @@ public class QualitydemyTest {
                 sendKeys(Keys.PAGE_DOWN).perform();
         ReusableMethods.bekle(5);
         quality.second.click();
+        ReusableMethods.bekle(10);
+        actions.sendKeys(Keys.PAGE_DOWN).
+                sendKeys(Keys.PAGE_DOWN).perform();
+
         ReusableMethods.bekle(5);
         quality.englsh.click();
 
@@ -64,7 +68,6 @@ public class QualitydemyTest {
                 sendKeys(Keys.TAB).sendKeys("ahmet bye").
                 sendKeys(Keys.TAB).click(quality.paybuton).
 
-                // telefon numarasını kutucuğa yazmıyor
                 sendKeys("555 252 22 22").perform();
         quality.ode.click();
 
@@ -90,7 +93,6 @@ public class QualitydemyTest {
         quality.loginButton.click();
 
         actions.sendKeys(Keys.PAGE_DOWN).
-
                 sendKeys(Keys.PAGE_DOWN).perform();
         ReusableMethods.bekle(5);
 
@@ -101,9 +103,6 @@ public class QualitydemyTest {
         ReusableMethods.bekle(6);
 
         actions.sendKeys(Keys.PAGE_UP).moveToElement(quality.kalp).click(quality.tgoto).perform();
-
-
-
 
 
 
